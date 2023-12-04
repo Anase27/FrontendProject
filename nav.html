@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosma</title>
+    <link rel="stylesheet" href="./CSS/cosma.css">
+    <!-- <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script> -->
+    <style>
+        .nav-links-container>div{
+            opacity: 0;
+            transition: opacity 0.2s ease-out;
+        }
+        .nav-links-container{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height ease-out .5s;
+            /* transition: all ease-in-out .5s; */
+        }
+
+        .nav-active{
+            max-height: calc(100vh - 100px);
+            opacity: 1;
+            /* margin-top: 10px; */
+            transition: max-height 0.5s ease-in .25s;
+            /* transition: all 0.5s ease-in .25s; */
+        }
+        .nav-active>div{
+            opacity: 1;
+            transition: opacity 0.5s ease-in;
+        }
+        .type-link{
+            display: grid;
+            grid-template-columns:repeat(5,250px) ;
+        }
+        .random{
+            padding: 0 15px;
+        }
+        .temp{
+            border-bottom: inset var(--border-light);
+        }
+        .type-link{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-name">
+                <a href="../HTML/index.html">COSMA</a>
+            </div>
+            <div class="temp2">
+                <div class="temp">
+                    <div class="nav-categories">
+                        <div class="nav-categories-div" id="body">
+                            <a href="">
+                                <p class="nav-category-name">BODY</p>
+                            </a>
+                            <div class="nav-category-list">
+                                <!-- <span class="iconify" data-icon="ph:x-thin"></span> -->
+                                <div class="nav-category-head"></div>
+                                <!-- <div class="nav-links-container">
+                                    <div class="body-links-container">
+                                        <div><a href="">linkgfhjkl</a></div>
+                                        <div><a href="">link</a></div>
+                                        <div><a href="">link</a></div>
+                                        <div><a href="">link</a></div>
+                                        <div><a href="">link</a></div>
+                                        <div><a href="">link</a></div>
+                                        <div><a href="">link</a></div>
+                                        <div><a href="">link</a></div>
+                                        <div><a href="">link</a></div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="nav-categories-div" id="hair">
+                            <a href="">
+                                <p class="nav-category-name">HAIR</p>
+                            </a>
+                            <div class="nav-category-list">
+                                <!-- <span class="iconify" data-icon="ph:x-thin"></span> -->
+                            </div>
+                        </div>
+                        <div class="nav-categories-div">
+                            <a href="">
+                                <p class="nav-category-name">SKINCARE</p>
+                            </a>
+                            <div class="nav-category-list">
+                                <!-- <span class="iconify" data-icon="ph:x-thin"></span> -->
+                            </div>
+                        </div>
+                        <div class="nav-categories-div">
+                            <a href="../HTML/fragrance.html">
+                                <p class="nav-category-name">FRAGRANCES</p>
+                            </a>
+                            <div class="nav-category-list">
+                                <!-- <span class="iconify" data-icon="ph-x-thin"></span> -->
+                            </div>
+                        </div>
+                        <div class="nav-categories-div">
+                            <a href="">
+                                <p class="nav-category-name">MAKEUP</p>
+                            </a>
+                            <div class="nav-category-list">
+                                <!-- <span class="iconify" data-icon="ph:x-thin"></span> -->
+                            </div>
+                        </div>
+                        <div class="nav-categories-div">
+                            <a href="../HTML/brands.html">
+                                <p class="nav-category-name">BRANDS</p>
+                            </a>
+                            <div class="nav-category-list">
+                                <!-- <span class="iconify" data-icon="ph:x-thin"></span> -->
+                            </div>
+                        </div>
+                        <div class="nav-categories-div">
+                            <a href="">
+                                <p class="nav-category-name">GIFTS AND SETS</p>
+                            </a>
+                            <div class="nav-category-list">
+                                <!-- <span class="iconify" data-icon="ph:x-thin"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="nav-search-profile">
+                        <span class="iconify" data-icon="iconamoon:search-thin" data-width="25" data-height="25"></span>
+                        <a href="../HTML/sign-up-form.html"><span class="iconify profile" data-icon="iconamoon:profile-thin"
+                                data-width="25" data-height="25"></span></a>
+                    </div> -->
+                </div>
+                <div class="random">
+                    <div class="nav-links-container body-links-container">
+                        <div class="type-link">
+                            <div>
+                                <div><h6>NAME</h6></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-links-container hair-links-container">
+                        <div class="type-link" >
+                            <div>
+                                <div><h6>NAME</h6></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                            </div>
+                            <div>
+                                <div><h6>NAME</h6></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                                <div><a href="">link</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+<script src="scr.js"></script>
+
+</html>
